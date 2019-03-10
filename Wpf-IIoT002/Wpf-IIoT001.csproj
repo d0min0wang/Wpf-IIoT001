@@ -79,6 +79,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Model\Alarm.cs" />
+    <Compile Include="Model\alarmFlags.cs" />
     <Compile Include="Model\AlarmInfo.cs" />
     <Compile Include="Model\AlarmItems.cs" />
     <Compile Include="Model\AlarmMessages.cs" />

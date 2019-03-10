@@ -88,7 +88,8 @@ namespace Wpf_IIoT001
             //添加点位变化事件回调
             opcClient.OpcDataChangedEvent += new OPCDataChangedHandler(OpcClient_OpcDataChangedEvent);
             //添加监视点位
-            machineItems MachineItems = new machineItems();
+            machineItems _machineItems = new machineItems();
+            AlarmItems _alarmItems = new AlarmItems();
             ////await Task.Run(() =>
             ////{
             //    foreach (KeyValuePair<string, int> keyValuePair in MachineItems.getMachineFlagDict())
@@ -97,12 +98,20 @@ namespace Wpf_IIoT001
             //    }
             ////});
             await Task.Run(() =>
-                Parallel.ForEach(MachineItems.getMachineFlagDict(), keyValuePair=>
+                Parallel.ForEach(_machineItems.getMachineFlagDict(), keyValuePair=>
                 {
                     opcClient.MonitorOPCItem(keyValuePair.Key, keyValuePair.Value);
                 }
             ));
-            MachineItems.Dispose();
+
+            await Task.Run(() =>
+                Parallel.ForEach(_alarmItems.getAlarmFlagDict(), keyValuePair =>
+                {
+                    opcClient.MonitorOPCItem(keyValuePair.Key, keyValuePair.Value);
+                }
+            ));
+
+            _machineItems.Dispose();
         }
 
         /// <summary>
@@ -115,110 +124,117 @@ namespace Wpf_IIoT001
             //OPC值变化监视事件处理函数
             foreach (OPCChangeModel model in list)
             {
-                switch(model.Index/100)
+                if (model.Index / 10000 == 0)
                 {
-                    //第一排
-                    case 0:
-                        MachineFlagSet(machinesFlags.DF07Flag, model, model.Index);
-                        break;
-                    case 1:
-                        MachineFlagSet(machinesFlags.DF06Flag, model, model.Index);
-                        break;
-                    case 2:
-                        MachineFlagSet(machinesFlags.SF08Flag, model, model.Index);
-                        break;
-                    case 3:
-                        MachineFlagSet(machinesFlags.SF07Flag, model, model.Index);
-                        break;
-                    case 4:
-                        MachineFlagSet(machinesFlags.SF06Flag, model, model.Index);
-                        break;
-                    case 5:
-                        MachineFlagSet(machinesFlags.SF05Flag, model, model.Index);
-                        break;
-                    case 6:
-                        MachineFlagSet(machinesFlags.SF04Flag, model, model.Index);
-                        break;                    
-                    case 7:
-                        MachineFlagSet(machinesFlags.SF03Flag, model, model.Index);
-                        break;
-                    case 8:
-                        MachineFlagSet(machinesFlags.SF02Flag, model, model.Index);
-                        break;
-                    case 9:
-                        MachineFlagSet(machinesFlags.SF01Flag, model, model.Index);
-                        break;
-                    case 10:
-                        MachineFlagSet(machinesFlags.DF05Flag, model, model.Index);
-                        break;
-                    case 11:
-                        MachineFlagSet(machinesFlags.DF04Flag, model, model.Index);
-                        break;
-                    case 12:
-                        MachineFlagSet(machinesFlags.DF03Flag, model, model.Index);
-                        break;
-                    case 13:
-                        MachineFlagSet(machinesFlags.DF02Flag, model, model.Index);
-                        break;
-                    case 14:
-                        MachineFlagSet(machinesFlags.DF01Flag, model, model.Index);
-                        break;
-                    //第二排
-                    case 15:
-                        MachineFlagSet(machinesFlags.DF17Flag, model, model.Index);
-                        break;
-                    case 16:
-                        MachineFlagSet(machinesFlags.DF16Flag, model, model.Index);
-                        break;
-                    case 17:
-                        MachineFlagSet(machinesFlags.DF15Flag, model, model.Index);
-                        break;
-                    case 18:
-                        MachineFlagSet(machinesFlags.SF12Flag, model, model.Index);
-                        break;
-                    case 19:
-                        MachineFlagSet(machinesFlags.SF11Flag, model, model.Index);
-                        break;
-                    case 20:
-                        MachineFlagSet(machinesFlags.SF10Flag, model, model.Index);
-                        break;
-                    case 21:
-                        MachineFlagSet(machinesFlags.SF09Flag, model, model.Index);
-                        break;
-                    case 22:
-                        MachineFlagSet(machinesFlags.DF14Flag, model, model.Index);
-                        break;
-                    case 23:
-                        MachineFlagSet(machinesFlags.DF13Flag, model, model.Index);
-                        break;
-                    case 24:
-                        MachineFlagSet(machinesFlags.DF12Flag, model, model.Index);
-                        break;
-                    case 25:
-                        MachineFlagSet(machinesFlags.DF11Flag, model, model.Index);
-                        break;
-                    case 26:
-                        MachineFlagSet(machinesFlags.DF10Flag, model, model.Index);
-                        break;
-                    case 27:
-                        MachineFlagSet(machinesFlags.DF09Flag, model, model.Index);
-                        break;
-                    case 28:
-                        MachineFlagSet(machinesFlags.DF08Flag, model, model.Index);
-                        break;
-                    //第三排
-                    case 29:
-                        MachineFlagSet(machinesFlags.SF13Flag, model, model.Index);
-                        break;
-                    case 30:
-                        MachineFlagSet(machinesFlags.SF14Flag, model, model.Index);
-                        break;
-                    case 31:
-                        MachineFlagSet(machinesFlags.DF19Flag, model, model.Index);
-                        break;
-                    case 32:
-                        MachineFlagSet(machinesFlags.SE13Flag, model, model.Index);
-                        break;
+                    switch (model.Index / 100)
+                    {
+                        //第一排
+                        case 0:
+                            MachineFlagSet(machinesFlags.DF07Flag, model, model.Index);
+                            break;
+                        case 1:
+                            MachineFlagSet(machinesFlags.DF06Flag, model, model.Index);
+                            break;
+                        case 2:
+                            MachineFlagSet(machinesFlags.SF08Flag, model, model.Index);
+                            break;
+                        case 3:
+                            MachineFlagSet(machinesFlags.SF07Flag, model, model.Index);
+                            break;
+                        case 4:
+                            MachineFlagSet(machinesFlags.SF06Flag, model, model.Index);
+                            break;
+                        case 5:
+                            MachineFlagSet(machinesFlags.SF05Flag, model, model.Index);
+                            break;
+                        case 6:
+                            MachineFlagSet(machinesFlags.SF04Flag, model, model.Index);
+                            break;
+                        case 7:
+                            MachineFlagSet(machinesFlags.SF03Flag, model, model.Index);
+                            break;
+                        case 8:
+                            MachineFlagSet(machinesFlags.SF02Flag, model, model.Index);
+                            break;
+                        case 9:
+                            MachineFlagSet(machinesFlags.SF01Flag, model, model.Index);
+                            break;
+                        case 10:
+                            MachineFlagSet(machinesFlags.DF05Flag, model, model.Index);
+                            break;
+                        case 11:
+                            MachineFlagSet(machinesFlags.DF04Flag, model, model.Index);
+                            break;
+                        case 12:
+                            MachineFlagSet(machinesFlags.DF03Flag, model, model.Index);
+                            break;
+                        case 13:
+                            MachineFlagSet(machinesFlags.DF02Flag, model, model.Index);
+                            break;
+                        case 14:
+                            MachineFlagSet(machinesFlags.DF01Flag, model, model.Index);
+                            break;
+                        //第二排
+                        case 15:
+                            MachineFlagSet(machinesFlags.DF17Flag, model, model.Index);
+                            break;
+                        case 16:
+                            MachineFlagSet(machinesFlags.DF16Flag, model, model.Index);
+                            break;
+                        case 17:
+                            MachineFlagSet(machinesFlags.DF15Flag, model, model.Index);
+                            break;
+                        case 18:
+                            MachineFlagSet(machinesFlags.SF12Flag, model, model.Index);
+                            break;
+                        case 19:
+                            MachineFlagSet(machinesFlags.SF11Flag, model, model.Index);
+                            break;
+                        case 20:
+                            MachineFlagSet(machinesFlags.SF10Flag, model, model.Index);
+                            break;
+                        case 21:
+                            MachineFlagSet(machinesFlags.SF09Flag, model, model.Index);
+                            break;
+                        case 22:
+                            MachineFlagSet(machinesFlags.DF14Flag, model, model.Index);
+                            break;
+                        case 23:
+                            MachineFlagSet(machinesFlags.DF13Flag, model, model.Index);
+                            break;
+                        case 24:
+                            MachineFlagSet(machinesFlags.DF12Flag, model, model.Index);
+                            break;
+                        case 25:
+                            MachineFlagSet(machinesFlags.DF11Flag, model, model.Index);
+                            break;
+                        case 26:
+                            MachineFlagSet(machinesFlags.DF10Flag, model, model.Index);
+                            break;
+                        case 27:
+                            MachineFlagSet(machinesFlags.DF09Flag, model, model.Index);
+                            break;
+                        case 28:
+                            MachineFlagSet(machinesFlags.DF08Flag, model, model.Index);
+                            break;
+                        //第三排
+                        case 29:
+                            MachineFlagSet(machinesFlags.SF13Flag, model, model.Index);
+                            break;
+                        case 30:
+                            MachineFlagSet(machinesFlags.SF14Flag, model, model.Index);
+                            break;
+                        case 31:
+                            MachineFlagSet(machinesFlags.DF19Flag, model, model.Index);
+                            break;
+                        case 32:
+                            MachineFlagSet(machinesFlags.SE13Flag, model, model.Index);
+                            break;
+                    }
+                }
+                if(model.Index/10000>0)
+                {
+
                 }
             }
             //label184.Text = machinesFlags.SR01Flag.MachineStatus.ToString();

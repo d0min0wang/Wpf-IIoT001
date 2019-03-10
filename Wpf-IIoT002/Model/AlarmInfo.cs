@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Wpf_IIoT001.Model
+namespace Wpf_IIoT001
 {
     public enum AlarmInfoOfDF
     {
@@ -143,6 +143,67 @@ namespace Wpf_IIoT001.Model
     }
     public enum AlarmInfoOfSF
     {
-
+        [Description("模具小车没到脱膜机位置，请注意。")]
+        error1 = 1,
+        [Description("脱模机感应器出问题，请检查。")]
+        error2 = 2,
+        [Description("刷油机感应器出问题，请检查。")]
+        error3 = 3,
+        [Description("浸料气缸感应器出问题，请检查。")]
+        error4 = 4,
+        [Description("脱膜气缸感应器出问题，请检查。")]
+        error5 = 5,
+        [Description("脱膜气缸下降出问题，请检查。")]
+        error6 = 6,
+        [Description("脱膜气缸上升出问题，请检查。")]
+        error7 = 7,
+        [Description("浸料气缸下降出问题，请检查。")]
+        error8 = 8,
+        [Description("浸料气缸上升出问题，请检查。")]
+        error9 = 9,
+        [Description("刷油机前行出问题，请检查。")]
+        error10 = 10,
+        [Description("刷油机后行出问题，请检查。")]
+        error11 = 11,
+        [Description("模具小车没到刷油机位置，请注意。")]
+        error12 = 12,
+        [Description("水箱出问题，请检查。")]
+        error13 = 13,
+        [Description("前炉门出问题，请检查。")]
+        error14 = 14,
+        [Description("模具小车没到水箱位置，请注意。")]
+        error15 = 15,
+        [Description("后炉门出问题，请检查。")]
+        error16 = 16,
+        [Description("模具小车没到炉子位置，请注意。")]
+        error17 = 17,
+        [Description("模具小车没到浸料机位置，请注意。")]
+        error18 = 18,
+        [Description("伺服电机报警，请关电重启。")]
+        error19 = 19,
+        [Description("浸料机驱动器报警，请断电重启。")]
+        error20 = 20,
+        [Description("脱膜机前进出问题，请检查。")]
+        error21 = 21,
+        [Description("脱模机后退出问题，请检查。")]
+        error22 = 22,
+        [Description("伺服电机已关，请打开。")]
+        error23 = 23,
+        [Description("浸料机液面感应器出问题，请检查。")]
+        error24 = 24,
+        [Description("浸料机下降一速应该大于二速，请重新设定。")]
+        error25 = 25,
+        [Description("急停已按下，请注意。")]
+        error26 = 26,
+        [Description("伺服电机没有回零点。")]
+        error27 = 27,
+        [Description("机器没有动作，请重新启动。")]
+        error28 = 28,
+        [Description("浸料机没有料了，请加料。")]
+        error29 = 29,
+        [Description("产量已完成，请注意。")]
+        error30 = 30,
+        [Description("由于长时间不做管，系统自动关炉子，请重新开炉子做管。")]
+        error31 = 31
     }
 }
