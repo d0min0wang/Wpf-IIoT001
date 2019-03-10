@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Wpf_IIoT002
+namespace Wpf_IIoT001
 {
     /// <summary>
     /// App.xaml 的交互逻辑

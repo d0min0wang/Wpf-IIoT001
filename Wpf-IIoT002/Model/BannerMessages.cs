@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Threading;
 
-namespace Wpf_IIoT002
+namespace Wpf_IIoT001
 {
     /// <summary>
     /// Banner显示的数据绑定

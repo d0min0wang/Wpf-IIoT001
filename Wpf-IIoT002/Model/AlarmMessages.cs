@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OPCAutomation;
 
-namespace Wpf_IIoT002
+namespace Wpf_IIoT001
 {
     public class AlarmMessage
     {

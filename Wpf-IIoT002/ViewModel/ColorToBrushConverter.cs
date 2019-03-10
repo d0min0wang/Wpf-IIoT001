@@ -2,7 +2,7 @@
 using System.Windows.Media;
 using System.Windows.Data;
 
-namespace Wpf_IIoT002
+namespace Wpf_IIoT001
 {
     [ValueConversion(typeof(int), typeof(SolidColorBrush))]
     public class ColorToBrushConverter : IValueConverter

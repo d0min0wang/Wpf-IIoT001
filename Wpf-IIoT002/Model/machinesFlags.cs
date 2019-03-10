@@ -1,40 +1,42 @@
-﻿namespace Wpf_IIoT002
+﻿namespace Wpf_IIoT001
 {
     public class machinesFlags
     {
-        //研发二楼车间
-        public static machineFlag DY04Flag = new machineFlag();
-        public static machineFlag DY03Flag = new machineFlag();
-        public static machineFlag DY02Flag = new machineFlag();
-        public static machineFlag DY01Flag = new machineFlag();
-        public static machineFlag SG01Flag = new machineFlag();
-        public static machineFlag SG02Flag = new machineFlag();
-        public static machineFlag SG03Flag = new machineFlag();
-        public static machineFlag SE14Flag = new machineFlag();
-        public static machineFlag SE12Flag = new machineFlag();
-        public static machineFlag SE11Flag = new machineFlag();
-        public static machineFlag SY01Flag = new machineFlag();
-        //研发二楼洁净车间
-        public static machineFlag DE03Flag = new machineFlag();
-        public static machineFlag DE02Flag = new machineFlag();
-        public static machineFlag DE01Flag = new machineFlag();
-        public static machineFlag SE08Flag = new machineFlag();
-        public static machineFlag SE07Flag = new machineFlag();
-        public static machineFlag SE06Flag = new machineFlag();
-        public static machineFlag SE05Flag = new machineFlag();
-        public static machineFlag SE04Flag = new machineFlag();
-        public static machineFlag SE03Flag = new machineFlag();
-        public static machineFlag SE02Flag = new machineFlag();
-        public static machineFlag SE01Flag = new machineFlag();
-        //研发一楼车间
-        public static machineFlag DF20Flag = new machineFlag();
-        public static machineFlag DF18Flag = new machineFlag();
-        public static machineFlag DE12Flag = new machineFlag();
-        public static machineFlag DE11Flag = new machineFlag();
-        public static machineFlag SM02Flag = new machineFlag();
-        public static machineFlag SM01Flag = new machineFlag();
-        public static machineFlag SR02Flag = new machineFlag();
-        public static machineFlag SR01Flag = new machineFlag();
-        public static machineFlag DF21Flag = new machineFlag();
+        //第一排左起
+        public static machineFlag DF07Flag = new machineFlag();
+        public static machineFlag DF06Flag = new machineFlag();
+        public static machineFlag SF08Flag = new machineFlag();
+        public static machineFlag SF07Flag = new machineFlag();
+        public static machineFlag SF06Flag = new machineFlag();
+        public static machineFlag SF05Flag = new machineFlag();
+        public static machineFlag SF04Flag = new machineFlag();
+        public static machineFlag SF03Flag = new machineFlag();
+        public static machineFlag SF02Flag = new machineFlag();
+        public static machineFlag SF01Flag = new machineFlag();
+        public static machineFlag DF05Flag = new machineFlag();
+        public static machineFlag DF04Flag = new machineFlag();
+        public static machineFlag DF03Flag = new machineFlag();
+        public static machineFlag DF02Flag = new machineFlag();
+        public static machineFlag DF01Flag = new machineFlag();
+        //第二排租期
+        public static machineFlag DF17Flag = new machineFlag();
+        public static machineFlag DF16Flag = new machineFlag();
+        public static machineFlag DF15Flag = new machineFlag();
+        public static machineFlag SF12Flag = new machineFlag();
+        public static machineFlag SF11Flag = new machineFlag();
+        public static machineFlag SF10Flag = new machineFlag();
+        public static machineFlag SF09Flag = new machineFlag();
+        public static machineFlag DF14Flag = new machineFlag();
+        public static machineFlag DF13Flag = new machineFlag();
+        public static machineFlag DF12Flag = new machineFlag();
+        public static machineFlag DF11Flag = new machineFlag();
+        public static machineFlag DF10Flag = new machineFlag();
+        public static machineFlag DF09Flag = new machineFlag();
+        public static machineFlag DF08Flag = new machineFlag();
+        //第三排左起
+        public static machineFlag SF13Flag = new machineFlag();
+        public static machineFlag SF14Flag = new machineFlag();
+        public static machineFlag DF19Flag = new machineFlag();
+        public static machineFlag SE13Flag = new machineFlag();
     }
 }

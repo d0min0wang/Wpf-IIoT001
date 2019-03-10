@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Wpf_IIoT002
+namespace Wpf_IIoT001
 {
     public class machineFlag: INotifyPropertyChanged
     {

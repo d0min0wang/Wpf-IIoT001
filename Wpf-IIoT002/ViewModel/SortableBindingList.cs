@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Reflection;
 
-namespace Wpf_IIoT002
+namespace Wpf_IIoT001
 {
     /// <summary>
     /// 泛型会失去DataTable特性，DataGridView绑定List<T>后不支持排序

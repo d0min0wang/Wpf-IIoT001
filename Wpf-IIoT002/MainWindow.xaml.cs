@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Wpf_IIoT002
+namespace Wpf_IIoT001
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -40,18 +40,23 @@ namespace Wpf_IIoT002
         {
             //Banner
             GridBanner.DataContext = bannerMessages;
-            //研发二楼车间
-            DG01Status.DataContext = machinesFlags.DY04Flag;
-            DY03Status.DataContext = machinesFlags.DY03Flag;
-            DY02Status.DataContext = machinesFlags.DY02Flag;
-            DY01Status.DataContext = machinesFlags.DY01Flag;
-            SG01Status.DataContext = machinesFlags.SG01Flag;
-            SG02Status.DataContext = machinesFlags.SG02Flag;
-            SG03Status.DataContext = machinesFlags.SG03Flag;
-            SE11Status.DataContext = machinesFlags.SE11Flag;
-            SE14Status.DataContext = machinesFlags.SE14Flag;
-            SY01Status.DataContext = machinesFlags.SY01Flag;
-            //研发二楼洁净车间
+            //第一排
+            DF07Status.DataContext = machinesFlags.DF07Flag;
+            DF06Status.DataContext = machinesFlags.DF06Flag;
+            SF08Status.DataContext = machinesFlags.SF08Flag;
+            SF07Status.DataContext = machinesFlags.SF07Flag;
+            SF06Status.DataContext = machinesFlags.SF06Flag;
+            SF05Status.DataContext = machinesFlags.SF05Flag;
+            SF04Status.DataContext = machinesFlags.SF04Flag;
+            SF03Status.DataContext = machinesFlags.SF03Flag;
+            SF02Status.DataContext = machinesFlags.SF02Flag;
+            SF01Status.DataContext = machinesFlags.SF01Flag;
+            DF05Status.DataContext = machinesFlags.DF05Flag;
+            DF04Status.DataContext = machinesFlags.DF04Flag;
+            DF03Status.DataContext = machinesFlags.DF03Flag;
+            DF02Status.DataContext = machinesFlags.DF02Flag;
+            DF01Status.DataContext = machinesFlags.DF01Flag;
+            //第二排
             DE03Status.DataContext = machinesFlags.DE03Flag;
             DE02Status.DataContext = machinesFlags.DE02Flag;
             DE01Status.DataContext = machinesFlags.DE01Flag;
@@ -63,7 +68,7 @@ namespace Wpf_IIoT002
             SE03Status.DataContext = machinesFlags.SE03Flag;
             SE02Status.DataContext = machinesFlags.SE02Flag;
             SE01Status.DataContext = machinesFlags.SE01Flag;
-            //研发一楼车间
+            //第三排
             DF20Status.DataContext = machinesFlags.DF20Flag;
             DF18Status.DataContext = machinesFlags.DF18Flag;
             DE12Status.DataContext = machinesFlags.DE12Flag;
