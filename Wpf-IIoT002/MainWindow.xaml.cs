@@ -57,28 +57,26 @@ namespace Wpf_IIoT001
             DF02Status.DataContext = machinesFlags.DF02Flag;
             DF01Status.DataContext = machinesFlags.DF01Flag;
             //第二排
-            DE03Status.DataContext = machinesFlags.DE03Flag;
-            DE02Status.DataContext = machinesFlags.DE02Flag;
-            DE01Status.DataContext = machinesFlags.DE01Flag;
-            SE08Status.DataContext = machinesFlags.SE08Flag;
-            SE07Status.DataContext = machinesFlags.SE07Flag;
-            SE06Status.DataContext = machinesFlags.SE06Flag;
-            SE05Status.DataContext = machinesFlags.SE05Flag;
-            SE04Status.DataContext = machinesFlags.SE04Flag;
-            SE03Status.DataContext = machinesFlags.SE03Flag;
-            SE02Status.DataContext = machinesFlags.SE02Flag;
-            SE01Status.DataContext = machinesFlags.SE01Flag;
+            DF17Status.DataContext = machinesFlags.DF17Flag;
+            DF16Status.DataContext = machinesFlags.DF16Flag;
+            DF15Status.DataContext = machinesFlags.DF15Flag;
+            SF12Status.DataContext = machinesFlags.SF12Flag;
+            SF11Status.DataContext = machinesFlags.SF11Flag;
+            SF10Status.DataContext = machinesFlags.SF10Flag;
+            SF09Status.DataContext = machinesFlags.SF09Flag;
+            DF14Status.DataContext = machinesFlags.DF14Flag;
+            DF13Status.DataContext = machinesFlags.DF13Flag;
+            DF12Status.DataContext = machinesFlags.DF12Flag;
+            DF11Status.DataContext = machinesFlags.DF11Flag;
+            DF10Status.DataContext = machinesFlags.DF10Flag;
+            DF09Status.DataContext = machinesFlags.DF09Flag;
+            DF08Status.DataContext = machinesFlags.DF08Flag;
+
             //第三排
-            DF20Status.DataContext = machinesFlags.DF20Flag;
-            DF18Status.DataContext = machinesFlags.DF18Flag;
-            DE12Status.DataContext = machinesFlags.DE12Flag;
-            DE11Status.DataContext = machinesFlags.DE11Flag;
-            SM02Status.DataContext = machinesFlags.SM02Flag;
-            SM01Status.DataContext = machinesFlags.SM01Flag;
-            SE12Status.DataContext = machinesFlags.SE12Flag;
-            SR02Status.DataContext = machinesFlags.SR02Flag;
-            SR01Status.DataContext = machinesFlags.SR01Flag;
-            DF21Status.DataContext = machinesFlags.DF21Flag;
+            SF13Status.DataContext = machinesFlags.SF13Flag;
+            SF14Status.DataContext = machinesFlags.SF14Flag;
+            DF19Status.DataContext = machinesFlags.DF19Flag;
+            SE13Status.DataContext = machinesFlags.SE13Flag;
         }
 
         /// <summary>
@@ -119,101 +117,107 @@ namespace Wpf_IIoT001
             {
                 switch(model.Index/100)
                 {
-                    //研发楼二楼
+                    //第一排
                     case 0:
-                        MachineFlagSet(machinesFlags.DY04Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF07Flag, model, model.Index);
                         break;
                     case 1:
-                        MachineFlagSet(machinesFlags.DY03Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF06Flag, model, model.Index);
                         break;
                     case 2:
-                        MachineFlagSet(machinesFlags.DY02Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF08Flag, model, model.Index);
                         break;
                     case 3:
-                        MachineFlagSet(machinesFlags.DY01Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF07Flag, model, model.Index);
                         break;
                     case 4:
-                        MachineFlagSet(machinesFlags.SG01Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF06Flag, model, model.Index);
                         break;
                     case 5:
-                        MachineFlagSet(machinesFlags.SG02Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF05Flag, model, model.Index);
                         break;
                     case 6:
-                        MachineFlagSet(machinesFlags.SG03Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF04Flag, model, model.Index);
                         break;                    
                     case 7:
-                        MachineFlagSet(machinesFlags.SE14Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF03Flag, model, model.Index);
                         break;
                     case 8:
-                        MachineFlagSet(machinesFlags.SE12Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF02Flag, model, model.Index);
                         break;
                     case 9:
-                        MachineFlagSet(machinesFlags.SE11Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF01Flag, model, model.Index);
                         break;
                     case 10:
-                        MachineFlagSet(machinesFlags.SY01Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF05Flag, model, model.Index);
                         break;
-                    //研发二楼洁净车间
                     case 11:
-                        MachineFlagSet(machinesFlags.DE03Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF04Flag, model, model.Index);
                         break;
                     case 12:
-                        MachineFlagSet(machinesFlags.DE02Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF03Flag, model, model.Index);
                         break;
                     case 13:
-                        MachineFlagSet(machinesFlags.DE01Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF02Flag, model, model.Index);
                         break;
                     case 14:
-                        MachineFlagSet(machinesFlags.SE08Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF01Flag, model, model.Index);
                         break;
+                    //第二排
                     case 15:
-                        MachineFlagSet(machinesFlags.SE07Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF17Flag, model, model.Index);
                         break;
                     case 16:
-                        MachineFlagSet(machinesFlags.SE06Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF16Flag, model, model.Index);
                         break;
                     case 17:
-                        MachineFlagSet(machinesFlags.SE05Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF15Flag, model, model.Index);
                         break;
                     case 18:
-                        MachineFlagSet(machinesFlags.SE04Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF12Flag, model, model.Index);
                         break;
                     case 19:
-                        MachineFlagSet(machinesFlags.SE03Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF11Flag, model, model.Index);
                         break;
                     case 20:
-                        MachineFlagSet(machinesFlags.SE02Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF10Flag, model, model.Index);
                         break;
                     case 21:
-                        MachineFlagSet(machinesFlags.SE01Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF09Flag, model, model.Index);
                         break;
-                    //研发一楼车间
                     case 22:
-                        MachineFlagSet(machinesFlags.DF20Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF14Flag, model, model.Index);
                         break;
                     case 23:
-                        MachineFlagSet(machinesFlags.DF18Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF13Flag, model, model.Index);
                         break;
                     case 24:
-                        MachineFlagSet(machinesFlags.DE12Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF12Flag, model, model.Index);
                         break;
                     case 25:
-                        MachineFlagSet(machinesFlags.DE11Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF11Flag, model, model.Index);
                         break;
                     case 26:
-                        MachineFlagSet(machinesFlags.SM02Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF10Flag, model, model.Index);
                         break;
                     case 27:
-                        MachineFlagSet(machinesFlags.SM01Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF09Flag, model, model.Index);
                         break;
                     case 28:
-                        MachineFlagSet(machinesFlags.SR02Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.DF08Flag, model, model.Index);
                         break;
+                    //第三排
                     case 29:
-                        MachineFlagSet(machinesFlags.SR01Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF13Flag, model, model.Index);
                         break;
                     case 30:
-                        MachineFlagSet(machinesFlags.DF21Flag, model, model.Index);
+                        MachineFlagSet(machinesFlags.SF14Flag, model, model.Index);
+                        break;
+                    case 31:
+                        MachineFlagSet(machinesFlags.DF19Flag, model, model.Index);
+                        break;
+                    case 32:
+                        MachineFlagSet(machinesFlags.SE13Flag, model, model.Index);
                         break;
                 }
             }
@@ -294,319 +298,1099 @@ namespace Wpf_IIoT001
                 bannerMessages.MakingRatioStr = ((int)Math.Round((double)(_executingAndMaking.Sum()) * 100.0 / 31.0, 1)) + "%";
             }
         }
-
-        #region Tooltip提示
-        private void ImageDG01_MouseEnter(object sender, MouseEventArgs e)
+        #region 大自动机tooltips
+        private void ImageDF01_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF01Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF01Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF01Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF01Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF01Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF01Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(1 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF01.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageDG01_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF01_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF01.DataContext = "";
         }
 
-        private void ImageDY03_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF02_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF02Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF02Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF02Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF02Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF02Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF02Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(2 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF02.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageDY03_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF02_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF02.DataContext = "";
         }
 
-        private void ImageDY02_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF03_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF03Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF03Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF03Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF03Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF03Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF03Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(3 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF03.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageDY02_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF03_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF03.DataContext = "";
         }
 
-        private void ImageDY01_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF04_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF04Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF04Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF04Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF04Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF04Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF04Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(4 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF04.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageDY01_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF04_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF04.DataContext = "";
         }
 
-        private void ImageDE03_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF05_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF05Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF05Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF05Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF05Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF05Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF05Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(5 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF05.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageDE03_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF05_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF05.DataContext = "";
         }
 
-        private void ImageDE02_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF06_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machineFlagDF[6].FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machineFlagDF[6].DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machineFlagDF[6].FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machineFlagDF[6].CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machineFlagDF[6].BrushOilTimeSetting.ToString() + "\n";
+            if (machineFlagDF[6].getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(6 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF06.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageDE02_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF06_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF06.DataContext = "";
         }
 
-        private void ImageDE01_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF07_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF07Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF07Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF07Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF07Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF07Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF07Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(7 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF07.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageDE01_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF07_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF07.DataContext = "";
         }
 
-        private void ImageSG01_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF08_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF08Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF08Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF08Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF08Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF08Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF08Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(8 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF08.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSG01_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF08_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF08.DataContext = "";
         }
 
-        private void ImageSG02_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF09_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF09Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF09Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF09Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF09Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF09Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF09Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(9 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF09.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSG02_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF09_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF09.DataContext = "";
         }
 
-        private void ImageSG03_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF10_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF10Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF10Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF10Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF10Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF10Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF10Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(10 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF10.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSG03_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF10_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF10.DataContext = "";
         }
 
-        private void ImageSE11_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF11_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF11Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF11Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF11Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF11Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF11Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF11Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(11 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF11.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSE11_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF11_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF11.DataContext = "";
         }
 
-        private void ImageSE14_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF12_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF12Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF12Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF12Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF12Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF12Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF12Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(12 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF12.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSE14_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF12_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF12.DataContext = "";
         }
 
-        private void ImageSY01_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF13_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF13Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF13Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF13Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF13Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF13Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF13Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(13 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF13.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSY01_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF13_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF13.DataContext = "";
         }
 
-        private void ImageSE08_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF14_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF14Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF14Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF14Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF14Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF14Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF14Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(14 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF14.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSE08_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF14_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF14.DataContext = "";
         }
 
-        private void ImageSE07_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF15_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF15Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF15Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF15Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF15Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF15Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF15Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(15 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF15.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSE07_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF15_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF15.DataContext = "";
         }
 
-        private void ImageSE06_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF16_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF16Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF16Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF16Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF16Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF16Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF16Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(16 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF16.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSE06_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF16_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF16.DataContext = "";
         }
 
-        private void ImageSE05_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF17_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF17Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF17Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF17Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF17Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF17Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF17Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(17 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF17.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSE05_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF17_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF17.DataContext = "";
         }
 
-        private void ImageSE04_MouseEnter(object sender, MouseEventArgs e)
+        private void ImageDF19_MouseEnter(object sender, MouseEventArgs e)
         {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.DF19Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.DF19Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.DF19Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.DF19Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.DF19Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.DF19Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesDF.GetAlarmMessage(19 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
 
+            }
+            toolTipStr = str;
+            this.ImageDF19.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
         }
 
-        private void ImageSE04_MouseLeave(object sender, MouseEventArgs e)
+        private void ImageDF19_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            toolTipStr = "";
+            this.ImageDF19.DataContext = "";
         }
 
-        private void ImageSE03_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSE03_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSE02_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSE02_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSE01_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSE01_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDF18_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDF18_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDE12_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDE12_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDE11_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDE11_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSM02_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSM02_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSM01_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSM01_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSR02_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSR02_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSR01_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSR01_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDF20_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDF20_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDF21_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageDF21_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSE12_MouseEnter(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void ImageSE12_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
         #endregion
 
+        #region 小自动机tooltip
+        private void ImageSF01_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF01Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF01Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF01Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF01Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF01Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF01Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(1 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF01.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF01_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF01.DataContext = "";
+        }
+
+        private void ImageSF02_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF02Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF02Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF02Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF02Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF02Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF02Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(2 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF02.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF02_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF02.DataContext = "";
+        }
+
+        private void ImageSF03_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF03Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF03Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF03Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF03Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF03Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF03Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(3 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF03.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF03_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF03.DataContext = "";
+        }
+
+        private void ImageSF04_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF04Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF04Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF04Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF04Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF04Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF04Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(4 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF04.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF04_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF04.DataContext = "";
+        }
+
+        private void ImageSF05_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF05Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF05Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF05Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF05Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF05Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF05Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(5 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF05.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF05_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF05.DataContext = "";
+        }
+
+        private void ImageSF06_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF06Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF06Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF06Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF06Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF06Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF06Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(6 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF06.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF06_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF06.DataContext = "";
+        }
+
+        private void ImageSF07_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF07Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF07Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF07Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF07Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF07Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF07Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(7 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF07.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF07_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF07.DataContext = "";
+        }
+
+        private void ImageSF08_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF08Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF08Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF08Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF08Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF08Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF08Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(8 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF08.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF08_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF08.DataContext = "";
+        }
+
+        private void ImageSF09_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF09Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF09Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF09Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF09Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF09Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF09Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(9 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF09.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF09_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF09.DataContext = "";
+        }
+
+        private void ImageSF10_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF10Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF10Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF10Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF10Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF10Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF10Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(10 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF10.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF10_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF10.DataContext = "";
+        }
+
+        private void ImageSF11_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF11Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF11Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF11Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF11Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF11Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF11Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(11 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF11.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF11_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF11.DataContext = "";
+        }
+
+        private void ImageSF12_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF12Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF12Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF12Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF12Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF12Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF12Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(12 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF12.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF12_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF12.DataContext = "";
+        }
+
+        private void ImageSF13_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF13Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF13Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF13Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF13Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF13Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF13Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(13 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF13.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF13_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF13.DataContext = "";
+        }
+
+        private void ImageSF14_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SF14Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SF14Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SF14Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SF14Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SF14Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SF14Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(14 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSF14.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSF14_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSF14.DataContext = "";
+        }
+
+        private void ImageSE13_MouseEnter(object sender, MouseEventArgs e)
+        {
+            string str = "机器参数：\n"
+                    + "烤模时间设定：" + machinesFlags.SE13Flag.FlareMoldTimeSetting.ToString() + "\n"
+                    + "浸料时间设定：" + machinesFlags.SE13Flag.DipingMaterialTimeSetting.ToString() + "\n"
+                    + "烤料时间设定：" + machinesFlags.SE13Flag.FlareMaterialTimeSetting.ToString() + "\n"
+                    + "冷却时间设定：" + machinesFlags.SE13Flag.CoolingTimeSetting.ToString() + "\n"
+                    + "刷油时间设定：" + machinesFlags.SE13Flag.BrushOilTimeSetting.ToString() + "\n";
+            if (machinesFlags.SE13Flag.getAlarm() == 1)
+            {
+                str += "报警信息：" + "\n";
+                AlarmMessage am = new AlarmMessage();
+                for (int i = 1; i <= 74; i++)
+                {
+                    am = alarmMessagesSF.GetAlarmMessage(15 * 100 + i);
+                    if (am.AlarmFlag)
+                    {
+                        str = str + am.AlarmMessages + "; " + am.TimeStamp + '\n';
+                    }
+                }
+
+            }
+            toolTipStr = str;
+            this.ImageSE13.DataContext = toolTipStr;
+            //this.label184.Text = toolTipStr;
+        }
+
+        private void ImageSE13_MouseLeave(object sender, MouseEventArgs e)
+        {
+            toolTipStr = "";
+            this.ImageSE13.DataContext = "";
+        }
+        #endregion
         private void Window_Closing(object sender, CancelEventArgs e)
         {
             cancelTokenSource.Cancel();
