@@ -34,7 +34,7 @@ namespace Wpf_IIoT001
             watch.Start();
             await OpcClientInit();
             watch.Stop();
-            label184.Text = watch.ElapsedMilliseconds.ToString();
+            GlobalVars.statusMessages.GuiLoadedTime = watch.ElapsedMilliseconds.ToString();
         }
 
         /// <summary>
@@ -83,6 +83,10 @@ namespace Wpf_IIoT001
             SF14Status.DataContext = GlobalVars.SF14Flag;
             DF19Status.DataContext = GlobalVars.DF19Flag;
             SE13Status.DataContext = GlobalVars.SE13Flag;
+
+            //机器状态
+            label184.DataContext = GlobalVars.statusMessages;
+            labelServerStatus.DataContext = GlobalVars.statusMessages;
         }
 
         /// <summary>
@@ -91,28 +95,37 @@ namespace Wpf_IIoT001
         private async Task OpcClientInit()
         {
             opcClient.Init("192.168.0.130", "Kepware.KEPServerEX.V6");
-            //添加点位变化事件回调
-            opcClient.OpcDataChangedEvent += new OPCDataChangedHandler(OpcClient_OpcDataChangedEvent);
-            //添加监视点位
-            machineItems _machineItems = new machineItems();
-            AlarmItems _alarmItems = new AlarmItems();
+            if(opcClient.IsOPCServerConnected())
+            {
+                GlobalVars.statusMessages.ServerStatusString = "已连接到主OPC服务器";
+                //添加点位变化事件回调
+                opcClient.OpcDataChangedEvent += new OPCDataChangedHandler(OpcClient_OpcDataChangedEvent);
+                //添加监视点位
+                machineItems _machineItems = new machineItems();
+                AlarmItems _alarmItems = new AlarmItems();
 
-            //用多线程添加监视点
-            await Task.Run(() =>
-                Parallel.ForEach(_machineItems.getMachineFlagDict(), keyValuePair=>
-                {
-                    opcClient.MonitorOPCItem(keyValuePair.Key, keyValuePair.Value);
-                }
-            ));
+                //用多线程添加监视点
+                await Task.Run(() =>
+                    Parallel.ForEach(_machineItems.getMachineFlagDict(), keyValuePair =>
+                    {
+                        opcClient.MonitorOPCItem(keyValuePair.Key, keyValuePair.Value);
+                    }
+                ));
 
-            await Task.Run(() =>
-                Parallel.ForEach(_alarmItems.getAlarmFlagDict(), keyValuePair =>
-                {
-                    opcClient.MonitorOPCItem(keyValuePair.Key, keyValuePair.Value);
-                }
-            ));
+                await Task.Run(() =>
+                    Parallel.ForEach(_alarmItems.getAlarmFlagDict(), keyValuePair =>
+                    {
+                        opcClient.MonitorOPCItem(keyValuePair.Key, keyValuePair.Value);
+                    }
+                ));
 
-            _machineItems.Dispose();
+                _machineItems.Dispose();
+            }
+            else
+            {
+                GlobalVars.statusMessages.ServerStatusString = "OPC服务器未连接";
+            }
+            
         }
 
         /// <summary>

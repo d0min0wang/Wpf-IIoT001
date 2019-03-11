@@ -52,6 +52,9 @@ namespace Wpf_IIoT001
         //建立全局变量保存被触发的报警信息List
         public static ObservableCollection<AlarmMessage> AlarmMessagesDS = new ObservableCollection<AlarmMessage>();
 
+        //建立全局变量保存界面加载和服务器状态信息
+        public static StatusMessages statusMessages = new StatusMessages();
+
         //建立全局变量保存每个机器的可计算信息
         //int _quantityOfMachine = 33;
         public static int[] executing = new int[33];
