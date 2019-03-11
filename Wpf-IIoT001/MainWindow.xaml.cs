@@ -25,6 +25,11 @@ namespace Wpf_IIoT001
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Windows加载时用异步方式连接OPC服务器
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
             BindingInit();
@@ -35,6 +40,17 @@ namespace Wpf_IIoT001
             await OpcClientInit();
             watch.Stop();
             GlobalVars.statusMessages.GuiLoadedTime = watch.ElapsedMilliseconds.ToString();
+        }
+
+        /// <summary>
+        /// Windows关闭时先关闭OPC服务器的连接
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            cancelTokenSource.Cancel();
+            opcClient.Disconnect();
         }
 
         /// <summary>
@@ -923,12 +939,6 @@ namespace Wpf_IIoT001
             GlobalVars.SE13Flag.Toolstip = str;
         }
         #endregion
-        private void Window_Closing(object sender, CancelEventArgs e)
-        {
-            cancelTokenSource.Cancel();
-            opcClient.Disconnect();
-        }
-
         
     }
 }
