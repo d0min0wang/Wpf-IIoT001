@@ -357,6 +357,7 @@ namespace Wpf_IIoT001
         private void UpdateAlarmList()
         {
             GlobalVars.alarmMessages.Sort((a, b) => b.TimeStamp.CompareTo(a.TimeStamp));
+            GlobalVars.AlarmMessagesDS.Clear();
             foreach (var item in GlobalVars.alarmMessages)
             {
                 if (item.AlarmFlag)
