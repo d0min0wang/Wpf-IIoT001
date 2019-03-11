@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf-IIoT001", "Wpf-IIoT002\Wpf-IIoT001.csproj", "{61DD8CC8-63F2-4595-AF19-1BE1865210C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf-IIoT001", "Wpf-IIoT001\Wpf-IIoT001.csproj", "{61DD8CC8-63F2-4595-AF19-1BE1865210C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
