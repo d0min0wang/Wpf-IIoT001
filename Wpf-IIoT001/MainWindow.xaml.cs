@@ -27,7 +27,6 @@ namespace Wpf_IIoT001
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            dataGridViewAlarmMessage.ItemsSource = GlobalVars.AlarmMessagesDS;
             BindingInit();
             //var task1 = OpcClientInit();
 
@@ -43,6 +42,8 @@ namespace Wpf_IIoT001
         /// </summary>
         private void BindingInit()
         {
+            //DataGrid
+            dataGridViewAlarmMessage.ItemsSource = GlobalVars.AlarmMessagesDS;
             //Banner
             GridBanner.DataContext = GlobalVars.bannerMessages;
             //第一排
