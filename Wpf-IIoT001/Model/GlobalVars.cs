@@ -43,14 +43,16 @@ namespace Wpf_IIoT001
         public static machineFlag DF19Flag = new machineFlag();
         public static machineFlag SE13Flag = new machineFlag();
 
-        //建立全局静态变量以保存报警信息
-        
+        //建立全局静态变量保存Banner信息
+        public static BannerMessages bannerMessages = new BannerMessages();
+
+        //建立全局静态变量以保存报警信息       
         public static List<AlarmMessage> alarmMessages = new List<AlarmMessage>();
 
         //建立全局变量保存被触发的报警信息List
         public static ObservableCollection<AlarmMessage> AlarmMessagesDS = new ObservableCollection<AlarmMessage>();
 
-        //建立全局变量保存Banner信息
+        //建立全局变量保存每个机器的可计算信息
         //int _quantityOfMachine = 33;
         public static int[] executing = new int[33];
         public static int[] executingAndMaking = new int[33];

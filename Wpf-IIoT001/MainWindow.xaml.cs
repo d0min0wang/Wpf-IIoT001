@@ -17,8 +17,7 @@ namespace Wpf_IIoT001
     {
         //初始化客户端
         private OPCClientWrapper opcClient = new OPCClientWrapper();
-        //初始化Banner Model
-        private BannerMessages bannerMessages = new BannerMessages();
+        
         private static CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
 
         public MainWindow()
@@ -45,7 +44,7 @@ namespace Wpf_IIoT001
         private void BindingInit()
         {
             //Banner
-            GridBanner.DataContext = bannerMessages;
+            GridBanner.DataContext = GlobalVars.bannerMessages;
             //第一排
             DF07Status.DataContext = GlobalVars.DF07Flag;
             DF06Status.DataContext = GlobalVars.DF06Flag;
@@ -295,32 +294,32 @@ namespace Wpf_IIoT001
 
             //开机数量
             GlobalVars.executing[index] = flag.getMachineStart();
-            bannerMessages.Executing =GlobalVars.executing.Sum().ToString();
+            GlobalVars.bannerMessages.Executing =GlobalVars.executing.Sum().ToString();
             //停机数量
-            bannerMessages.NoExecuting = (33 - GlobalVars.executing.Sum()).ToString();
+            GlobalVars.bannerMessages.NoExecuting = (33 - GlobalVars.executing.Sum()).ToString();
             //开炉做管数量
             GlobalVars.executingAndMaking[index]=flag.getMaking();
-            bannerMessages.ExecutingAndMaking = GlobalVars.executingAndMaking.Sum().ToString();
+            GlobalVars.bannerMessages.ExecutingAndMaking = GlobalVars.executingAndMaking.Sum().ToString();
             //开炉空转数量
             GlobalVars.executingAndStartFurnace[index] = flag.getIdling();
-            bannerMessages.ExecutingAndStartFurnace = GlobalVars.executingAndStartFurnace.Sum().ToString();
+            GlobalVars.bannerMessages.ExecutingAndStartFurnace = GlobalVars.executingAndStartFurnace.Sum().ToString();
             //不开炉空转数量
             GlobalVars.executingAndStopFurnace[index] = flag.getIdlingAndFurnaceStop();
-            bannerMessages.ExecutingAndStopFurnace = GlobalVars.executingAndStopFurnace.Sum().ToString();
+            GlobalVars.bannerMessages.ExecutingAndStopFurnace = GlobalVars.executingAndStopFurnace.Sum().ToString();
             //报警数量
             GlobalVars.alarming[index] = flag.getAlarm();
-            bannerMessages.Alarming = GlobalVars.alarming.Sum().ToString();
+            GlobalVars.bannerMessages.Alarming = GlobalVars.alarming.Sum().ToString();
             //开机率
             if (GlobalVars.executing.Sum() > 0)
             {
-                bannerMessages.UtilizationRatio = (int)Math.Round((double)(GlobalVars.executing.Sum()) * 100.0 / 33.0, 0);
-                bannerMessages.UtilizationRatioStr = ((int)Math.Round((double)(GlobalVars.executing.Sum()) * 100.0 / 33.0, 0)).ToString() + "%";
+                GlobalVars.bannerMessages.UtilizationRatio = (int)Math.Round((double)(GlobalVars.executing.Sum()) * 100.0 / 33.0, 0);
+                GlobalVars.bannerMessages.UtilizationRatioStr = ((int)Math.Round((double)(GlobalVars.executing.Sum()) * 100.0 / 33.0, 0)).ToString() + "%";
             }
             //做管率
             if (GlobalVars.executingAndMaking.Sum() > 0)
             {
-                bannerMessages.MakingRatio = (int)Math.Round((double)(GlobalVars.executingAndMaking.Sum()) * 100.0 / 33.0, 1);
-                bannerMessages.MakingRatioStr = ((int)Math.Round((double)(GlobalVars.executingAndMaking.Sum()) * 100.0 / 33.0, 1)) + "%";
+                GlobalVars.bannerMessages.MakingRatio = (int)Math.Round((double)(GlobalVars.executingAndMaking.Sum()) * 100.0 / 33.0, 1);
+                GlobalVars.bannerMessages.MakingRatioStr = ((int)Math.Round((double)(GlobalVars.executingAndMaking.Sum()) * 100.0 / 33.0, 1)) + "%";
             }
         }
 
@@ -361,7 +360,7 @@ namespace Wpf_IIoT001
         }
 
         /// <summary>
-        /// 获取机器的所有被触发的报警信息
+        /// 获取每个机器的所有被触发的报警信息
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
