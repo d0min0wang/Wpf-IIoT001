@@ -234,7 +234,7 @@ namespace Wpf_IIoT001
                 }
                 if(model.Index/10000>0)
                 {
-
+                    AlarmFlagSet(model,model.Index);
                 }
             }
             //label184.Text = machinesFlags.SR01Flag.MachineStatus.ToString();
@@ -313,6 +313,11 @@ namespace Wpf_IIoT001
                 bannerMessages.MakingRatio = (int)Math.Round((double)(_executingAndMaking.Sum()) * 100.0 / 31.0, 1);
                 bannerMessages.MakingRatioStr = ((int)Math.Round((double)(_executingAndMaking.Sum()) * 100.0 / 31.0, 1)) + "%";
             }
+        }
+
+        private void AlarmFlagSet(OPCChangeModel model,int index)
+        {
+
         }
         #region 大自动机tooltips
         private void ImageDF01_MouseEnter(object sender, MouseEventArgs e)
