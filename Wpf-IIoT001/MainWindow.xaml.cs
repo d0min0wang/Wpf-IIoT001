@@ -25,7 +25,7 @@ namespace Wpf_IIoT001
         public MainWindow()
         {
             InitializeComponent();
-            //this.dataGridViewAlarmMessage.DataContext = GlobalVars.alarmsMessagesList;
+            dataGridViewAlarmMessage.ItemsSource = GlobalVars.AlarmMessagesDS;
             BindingInit();
             Stopwatch watch = new Stopwatch();///用于计算时间
             watch.Start();

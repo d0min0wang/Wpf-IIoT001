@@ -2091,7 +2091,6 @@
             <TextBlock Name="labelServerStatus" Text="labelServerStatus" FontSize="15" Foreground="DarkGray"  Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" VerticalAlignment="Bottom" TextAlignment="Right" Margin="0,0,10,10"/>
             <TextBlock Name="label184" Text="label184" FontSize="12" Foreground="DarkGray"  Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" VerticalAlignment="Top" TextAlignment="Right" Margin="0,10,10,0"/>
             <DataGrid Name="dataGridViewAlarmMessage" Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="8" BorderThickness="1" Margin="10" 
-                      ItemsSource="{Binding GlobalVars.alarmsMessagesList.AlarmMessagesDS}"
                       FontSize="14" AutoGenerateColumns="False" GridLinesVisibility="None" BorderBrush="DarkGray" IsReadOnly="True" RowHeaderWidth="0">
                 <DataGrid.Background>
                     <SolidColorBrush Color="#FFF0F0F0" Opacity="0"/>
