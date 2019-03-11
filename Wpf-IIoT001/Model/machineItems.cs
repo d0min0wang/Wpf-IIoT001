@@ -85,7 +85,7 @@ namespace Wpf_IIoT001
             //DF19 Index:31
             AddS7_1200Items("制造车间", "大机#19", "#01", 31);
             //SE13 Index:32
-            AddS7_200Items("制造车间", "手吹小机#14", "#01", 32);
+            AddS7_200Items("制造车间", "手吹小机#13", "#01", 32);
         }
 
         private void AddS7_200Items(string workshop,string machineNo,string plcNo,int index)
@@ -137,10 +137,10 @@ namespace Wpf_IIoT001
             _handleName = workshop + machineNo + "." + plcNo + ".状态.浸料时间设定";
             _machineFlagDict.Add(_handleName, index * 100 + 6);
 
-            _handleName = workshop + machineNo + "." + plcNo + ".状态.烤料时间设定";
+            _handleName = workshop + machineNo + ".#02" + ".状态.烤料时间设定";
             _machineFlagDict.Add(_handleName, index * 100 + 7);
 
-            _handleName = workshop + machineNo + "." + plcNo + ".状态.冷却时间设定";
+            _handleName = workshop + machineNo + ".#02" + ".状态.冷却时间设定";
             _machineFlagDict.Add(_handleName, index * 100 + 8);
 
             _handleName = workshop + machineNo + "." + plcNo + ".状态.烤料炉子电源开关";

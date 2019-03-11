@@ -100,6 +100,18 @@ namespace Wpf_IIoT001
             }
         }
 
+        //toolstip
+        private string _toolstip;
+        public string Toolstip
+        {
+            get { return _toolstip; }
+            set
+            {
+                _toolstip = value;
+                NotifyPropertyChanged("Toolstip");
+            }
+        }
+
         private int flareMoldTimeSetting;//烤模时间设定
         private int dippingMaterialTimeSetting;//浸料时间设定
         private int flareMaterialTimeSetting;//烤料时间设定

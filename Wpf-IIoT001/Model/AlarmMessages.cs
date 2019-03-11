@@ -50,7 +50,8 @@ namespace Wpf_IIoT001
     public class AlarmMessages
     {
         //private AlarmMessage[] alarmMessages=new AlarmMessage[1976] ;
-        private List<AlarmMessage> alarmMessages = new List<AlarmMessage>();
+        ////建立全局静态变量以保存
+        //public static List<AlarmMessage> alarmMessages = new List<AlarmMessage>();
 
         public AlarmMessages()
         {
@@ -125,7 +126,7 @@ namespace Wpf_IIoT001
             //DF19 Index:31
             //AddDFAlarmItems("制造车间", "大机#19", "#01", 31);
             //SE13 Index:32
-            AddSFAlarmItems("制造车间", "手吹小机#14", "#01", 33);
+            AddSFAlarmItems("制造车间", "手吹小机#13", "#01", 33);
         }
 
         private void AddDFAlarmItems(string workshop, string machineNo, string plcNo, int index)
@@ -155,7 +156,7 @@ namespace Wpf_IIoT001
                 alarmMessage.MachineNo = workshop+ machineNo;
                 alarmMessage.Index = index * 10000 + (int)x.GetValue(null);
                 alarmMessage.AlarmMessages = _description;
-                alarmMessages.Add(alarmMessage);
+                GlobalVars.alarmMessages.Add(alarmMessage);
             }
         }
 
@@ -186,18 +187,13 @@ namespace Wpf_IIoT001
                 alarmMessage.MachineNo = workshop + machineNo;
                 alarmMessage.Index = index * 10000 + (int)x.GetValue(null);
                 alarmMessage.AlarmMessages = _description;
-                alarmMessages.Add(alarmMessage);
+                GlobalVars.alarmMessages.Add(alarmMessage);
             }
         }
-
-        public AlarmMessage GetAlarmMessage(int position)
-        {
-            return alarmMessages[position];
-        }
-        public void SetAlarmMessage(int position, Boolean alarmflag, DateTime timestamp)
-        {
-            alarmMessages[position].AlarmFlag = alarmflag;
-            alarmMessages[position].TimeStamp = timestamp;
-        }
+        //public void SetAlarmMessage(int position, Boolean alarmflag, DateTime timestamp)
+        //{
+        //    alarmMessages[position].AlarmFlag = alarmflag;
+        //    alarmMessages[position].TimeStamp = timestamp;
+        //}
     }
 }

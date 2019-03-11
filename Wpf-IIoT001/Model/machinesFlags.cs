@@ -1,6 +1,8 @@
-﻿namespace Wpf_IIoT001
+﻿using System.Collections.Generic;
+
+namespace Wpf_IIoT001
 {
-    public class machinesFlags
+    public class GlobalVars
     {
         //第一排左起
         public static machineFlag DF07Flag = new machineFlag();
@@ -38,5 +40,8 @@
         public static machineFlag SF14Flag = new machineFlag();
         public static machineFlag DF19Flag = new machineFlag();
         public static machineFlag SE13Flag = new machineFlag();
+
+        //建立全局静态变量以保存报警信息
+        public static List<AlarmMessage> alarmMessages = new List<AlarmMessage>();
     }
 }

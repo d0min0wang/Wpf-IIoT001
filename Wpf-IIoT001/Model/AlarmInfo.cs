@@ -6,7 +6,7 @@ namespace Wpf_IIoT001
 {
     public enum AlarmInfoOfDF
     {
-        [Description("脱膜小车未归边")]
+        [Description("脱模小车未归位")]
         error1=1,
         [Description("开机时两个小车不能同时有模具")]
         error2=2,
@@ -18,7 +18,7 @@ namespace Wpf_IIoT001
         error5 = 5,
         [Description("烤料炉2号位无模具")]
         error6 = 6,
-        [Description("烤料炉插销未回零")]
+        [Description("烤料炉插销未归零")]
         error7 = 7,
         [Description("预热炉电机未开启")]
         error8 = 8,
@@ -134,7 +134,7 @@ namespace Wpf_IIoT001
         error63 = 63,
         [Description("浸料机已开，但脱模机没有开")]
         error64 = 64,
-        [Description("请注意: 这板模有管没脱掉")]
+        [Description("请注意:这板模有管没脱掉")]
         error65 = 65,
         [Description("浸料机已开，但水箱没有开")]
         error66 = 66,

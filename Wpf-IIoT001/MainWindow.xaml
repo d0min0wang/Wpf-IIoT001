@@ -115,9 +115,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF01" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF01_MouseEnter" MouseLeave="ImageDF01_MouseLeave">
+                <Image x:Name="ImageDF01" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF01_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -171,9 +171,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="12,10" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF02" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF02_MouseEnter" MouseLeave="ImageDF02_MouseLeave">
+                <Image x:Name="ImageDF02" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF02_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -227,9 +227,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF03" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF03_MouseEnter" MouseLeave="ImageDF03_MouseLeave">
+                <Image x:Name="ImageDF03" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF03_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -283,9 +283,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF04" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF04_MouseEnter" MouseLeave="ImageDF04_MouseLeave">
+                <Image x:Name="ImageDF04" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF04_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -339,9 +339,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF05" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF05_MouseEnter" MouseLeave="ImageDF05_MouseLeave">
+                <Image x:Name="ImageDF05" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF05_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -395,9 +395,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF01" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF01_MouseEnter" MouseLeave="ImageSF01_MouseLeave">
+                <Image x:Name="ImageSF01" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF01_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -451,9 +451,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF02" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF02_MouseEnter" MouseLeave="ImageSF02_MouseLeave">
+                <Image x:Name="ImageSF02" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF02_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -507,9 +507,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF03" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF03_MouseEnter" MouseLeave="ImageSF03_MouseLeave">
+                <Image x:Name="ImageSF03" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF03_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -563,9 +563,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF04" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF04_MouseEnter" MouseLeave="ImageSF04_MouseLeave">
+                <Image x:Name="ImageSF04" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF04_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -619,9 +619,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF05" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF05_MouseEnter" MouseLeave="ImageSF05_MouseLeave">
+                <Image x:Name="ImageSF05" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF05_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -675,9 +675,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF06" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF06_MouseEnter" MouseLeave="ImageSF06_MouseLeave">
+                <Image x:Name="ImageSF06" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF06_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -731,9 +731,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF07" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF07_MouseEnter" MouseLeave="ImageSF07_MouseLeave">
+                <Image x:Name="ImageSF07" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF07_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -787,9 +787,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF08" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF08_MouseEnter" MouseLeave="ImageSF08_MouseLeave">
+                <Image x:Name="ImageSF08" Grid.Row="1" Source="Images/小机-灰.png" MouseEnter="ImageSF08_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -843,9 +843,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF06" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF06_MouseEnter" MouseLeave="ImageDF06_MouseLeave">
+                <Image x:Name="ImageDF06" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF06_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -899,9 +899,9 @@
                     <RowDefinition Height="5*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="0" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF07" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF07_MouseEnter" MouseLeave="ImageDF07_MouseLeave">
+                <Image x:Name="ImageDF07" Grid.Row="1" Source="Images/大机-灰.png" MouseEnter="ImageDF07_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="0" Margin="15">
@@ -955,9 +955,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF08" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF08_MouseEnter" MouseLeave="ImageDF08_MouseLeave">
+                <Image x:Name="ImageDF08" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF08_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1011,9 +1011,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF09" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF09_MouseEnter" MouseLeave="ImageDF09_MouseLeave">
+                <Image x:Name="ImageDF09" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF09_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1067,9 +1067,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF10" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF10_MouseEnter" MouseLeave="ImageDF10_MouseLeave">
+                <Image x:Name="ImageDF10" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF10_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1123,9 +1123,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF11" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF11_MouseEnter" MouseLeave="ImageDF11_MouseLeave">
+                <Image x:Name="ImageDF11" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF11_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1179,9 +1179,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF12" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF12_MouseEnter" MouseLeave="ImageDF12_MouseLeave">
+                <Image x:Name="ImageDF12" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF12_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1235,9 +1235,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF13" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF13_MouseEnter" MouseLeave="ImageDF13_MouseLeave">
+                <Image x:Name="ImageDF13" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF13_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1291,9 +1291,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF14" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF14_MouseEnter" MouseLeave="ImageDF14_MouseLeave">
+                <Image x:Name="ImageDF14" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF14_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1347,9 +1347,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF09" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF09_MouseEnter" MouseLeave="ImageSF09_MouseLeave">
+                <Image x:Name="ImageSF09" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF09_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1403,9 +1403,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF10" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF10_MouseEnter" MouseLeave="ImageSF10_MouseLeave">
+                <Image x:Name="ImageSF10" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF10_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1459,9 +1459,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF11" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF11_MouseEnter" MouseLeave="ImageSF11_MouseLeave">
+                <Image x:Name="ImageSF11" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF11_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1515,9 +1515,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF12" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF12_MouseEnter" MouseLeave="ImageSF12_MouseLeave">
+                <Image x:Name="ImageSF12" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF12_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1571,9 +1571,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF15" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF15_MouseEnter" MouseLeave="ImageDF15_MouseLeave">
+                <Image x:Name="ImageDF15" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF15_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1627,9 +1627,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF16" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF16_MouseEnter" MouseLeave="ImageDF16_MouseLeave">
+                <Image x:Name="ImageDF16" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF16_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1683,9 +1683,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF17" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF17_MouseEnter" MouseLeave="ImageDF17_MouseLeave">
+                <Image x:Name="ImageDF17" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF17_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1739,9 +1739,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF13" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF13_MouseEnter" MouseLeave="ImageSF13_MouseLeave">
+                <Image x:Name="ImageSF13" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF13_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1795,9 +1795,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSF14" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF14_MouseEnter" MouseLeave="ImageSF14_MouseLeave">
+                <Image x:Name="ImageSF14" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSF14_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1851,9 +1851,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageDF19" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF19_MouseEnter" MouseLeave="ImageDF19_MouseLeave">
+                <Image x:Name="ImageDF19" Grid.Row="0" Source="Images/大机-灰.png" MouseEnter="ImageDF19_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
@@ -1907,9 +1907,9 @@
                     <RowDefinition Height="6*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Rectangle Grid.Row="1" Stroke="DarkGray" StrokeThickness="1" Margin="10,12" RadiusX="5" RadiusY="5"></Rectangle>
-                <Image x:Name="ImageSE13" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSE13_MouseEnter" MouseLeave="ImageSE13_MouseLeave">
+                <Image x:Name="ImageSE13" Grid.Row="0" Source="Images/小机-灰.png" MouseEnter="ImageSE13_MouseEnter">
                     <Image.ToolTip>
-                        <TextBlock Text="{Binding}"/>
+                        <TextBlock Text="{Binding Toolstip}"/>
                     </Image.ToolTip>
                 </Image>
                 <Grid Grid.Row="1" Margin="15">
