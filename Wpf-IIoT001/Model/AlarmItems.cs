@@ -16,77 +16,77 @@ namespace Wpf_IIoT001
         public AlarmItems()
         {
             //第一排
-            //DF07 Index:0
+            //DF07 Index:1
             AddDFAlarmItems("制造车间", "大机#07", "#01", 1);
-            //DF06 Index:1
+            //DF06 Index:2
             AddDFAlarmItems("制造车间", "大机#06", "#01", 2);
-            //SF08 Index:2
+            //SF08 Index:3
             AddSFAlarmItems("制造车间", "小机#08", "#01", 3);
-            //SF07 Index:3
+            //SF07 Index:4
             //_machineFlagDict.Add("制造车间小机#07.#01.状态.机器运行标志", 301);
             AddSFAlarmItems("制造车间", "小机#07", "#01", 4);
-            //SF06 Index:4
+            //SF06 Index:5
             AddSFAlarmItems("制造车间", "小机#06", "#01", 5);
-            //SF05 Index:5
+            //SF05 Index:6
             AddSFAlarmItems("制造车间", "小机#05", "#01", 6);
-            //SF04 Index:6
+            //SF04 Index:7
             AddSFAlarmItems("制造车间", "小机#04", "#01", 7);
-            //SF03 Index:7
+            //SF03 Index:8
             AddSFAlarmItems("制造车间", "小机#03", "#01", 8);
-            //SF02 Index:8
+            //SF02 Index:9
             AddSFAlarmItems("制造车间", "小机#02", "#01", 9);
-            //SF01 Index:9
+            //SF01 Index:10
             AddSFAlarmItems("制造车间", "小机#01", "#01", 10);
-            //DF05 Index:10
+            //DF05 Index:11
             AddDFAlarmItems("制造车间", "大机#05", "#01", 11);
-            //DF04 Index:11
+            //DF04 Index:12
             AddDFAlarmItems("制造车间", "大机#04", "#01", 12);
-            //DF03 Index:12
+            //DF03 Index:13
             AddDFAlarmItems("制造车间", "大机#03", "#01", 13);
-            //DF02 Index:13
+            //DF02 Index:14
             AddDFAlarmItems("制造车间", "大机#02", "#01", 14);
-            //DF01 Index:14
+            //DF01 Index:15
             AddDFAlarmItems("制造车间", "大机#01", "#01", 15);
 
             //第二排
-            //DF17 Index:15
-            AddDFAlarmItems("制造车间", "大机#17", "#01", 17);
-            //DF16 Index:16
+            //DF17 Index:16
+            AddDFAlarmItems("制造车间", "大机#17", "#01", 16);
+            //DF16 Index:17
             AddDFAlarmItems("制造车间", "大机#16", "#01", 17);
-            //DF15 Index:17
+            //DF15 Index:18
             AddDFAlarmItems("制造车间", "大机#15", "#01", 18);
-            //SF12 Index:18
+            //SF12 Index:19
             AddSFAlarmItems("制造车间", "小机#12", "#01", 19);
-            //SF11 Index:19
+            //SF11 Index:20
             AddSFAlarmItems("制造车间", "小机#11", "#01", 20);
-            //SF10 Index:20
+            //SF10 Index:21
             AddSFAlarmItems("制造车间", "小机#10", "#01", 21);
             //SF09 Index:22
             AddSFAlarmItems("制造车间", "小机#09", "#01", 22);
-            //DF14 Index:22
+            //DF14 Index:23
             AddDFAlarmItems("制造车间", "大机#14", "#01", 23);
-            //DF13 Index:23
+            //DF13 Index:24
             AddDFAlarmItems("制造车间", "大机#13", "#01", 24);
-            //DF12 Index:24
+            //DF12 Index:25
             AddDFAlarmItems("制造车间", "大机#12", "#01", 25);
-            //DF11 Index:25
+            //DF11 Index:26
             AddDFAlarmItems("制造车间", "大机#11", "#01", 26);
-            //DF10 Index:26
+            //DF10 Index:27
             AddDFAlarmItems("制造车间", "大机#10", "#01", 27);
-            //DF09 Index:27
+            //DF09 Index:28
             AddDFAlarmItems("制造车间", "大机#09", "#01", 28);
-            //DF08 Index:28
+            //DF08 Index:29
             AddDFAlarmItems("制造车间", "大机#08", "#01", 29);
 
             //第三排
-            //SF13 Index:29
+            //SF13 Index:30
             AddSFAlarmItems("制造车间", "小机#13", "#01", 30);
-            //SF14 Index:30
+            //SF14 Index:31
             AddSFAlarmItems("制造车间", "小机#14", "#01", 31);
-            //DF19 Index:31
+            //DF19 Index:32
             //AddDFAlarmItems("制造车间", "大机#19", "#01", 31);
-            //SE13 Index:32
-            AddSFAlarmItems("制造车间", "手吹小机#14", "#01", 33);
+            //SE13 Index:33
+            AddSFAlarmItems("制造车间", "手吹小机#13", "#01", 33);
         }
 
 
@@ -111,6 +111,12 @@ namespace Wpf_IIoT001
                 }
                 _handleName = workshop + machineNo + "." + plcNo + ".报警信息." + _description;
                 _alarmFlagDict.Add(_handleName, index * 10000 + (int)x.GetValue(null));
+                //初始化报警信息List
+                GlobalVars.AlarmMessage alarmMessage = new GlobalVars.AlarmMessage();
+                alarmMessage.MachineNo = workshop + machineNo;
+                alarmMessage.Index = index * 10000 + (int)x.GetValue(null);
+                alarmMessage.AlarmMessages = _description;
+                GlobalVars.alarmMessages.Add(alarmMessage);
             }
         }
 
@@ -134,6 +140,12 @@ namespace Wpf_IIoT001
                 }
                 _handleName = workshop + machineNo + "." + plcNo + ".报警信息." + _description;
                 _alarmFlagDict.Add(_handleName, index * 10000 + (int)x.GetValue(null));
+                //初始化报警信息List
+                GlobalVars.AlarmMessage alarmMessage = new GlobalVars.AlarmMessage();
+                alarmMessage.MachineNo = workshop + machineNo;
+                alarmMessage.Index = index * 10000 + (int)x.GetValue(null);
+                alarmMessage.AlarmMessages = _description;
+                GlobalVars.alarmMessages.Add(alarmMessage);
             }
         }
 

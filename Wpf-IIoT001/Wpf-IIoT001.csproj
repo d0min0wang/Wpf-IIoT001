@@ -78,12 +78,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Model\Alarm.cs" />
-    <Compile Include="Model\alarmFlags.cs" />
     <Compile Include="Model\AlarmInfo.cs" />
     <Compile Include="Model\AlarmItems.cs" />
-    <Compile Include="Model\AlarmMessages.cs" />
-    <Compile Include="Model\BannerMessages.cs" />
+    <Compile Include="ViewModel\AlarmsMessagesList.cs" />
+    <Compile Include="ViewModel\BannerMessages.cs" />
     <Compile Include="Model\machineItems.cs" />
     <Compile Include="Model\OPCCore\OPCChangeModel.cs" />
     <Compile Include="Model\OPCCore\OPCClientWrapper.cs" />
@@ -93,7 +91,7 @@
     <Compile Include="Model\OPCCore\TagTreeNode.cs" />
     <Compile Include="ViewModel\ColorToBrushConverter.cs" />
     <Compile Include="ViewModel\machineFlag.cs" />
-    <Compile Include="Model\machinesFlags.cs" />
+    <Compile Include="Model\GlobalVars.cs" />
     <Compile Include="ViewModel\SortableBindingList.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
