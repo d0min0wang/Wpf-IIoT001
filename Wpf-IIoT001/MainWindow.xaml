@@ -2091,15 +2091,15 @@
             <TextBlock Name="labelServerStatus" Text="labelServerStatus" FontSize="15" Foreground="DarkGray"  Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" VerticalAlignment="Bottom" TextAlignment="Right" Margin="0,0,10,10"/>
             <TextBlock Name="label184" Text="label184" FontSize="12" Foreground="DarkGray"  Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" VerticalAlignment="Top" TextAlignment="Right" Margin="0,10,10,0"/>
             <DataGrid Name="dataGridViewAlarmMessage" Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="8" BorderThickness="1" Margin="10" 
-                      ItemsSource="{Binding}"
+                      ItemsSource="{Binding GlobalVars.alarmsMessagesList.AlarmMessagesDS}"
                       FontSize="14" AutoGenerateColumns="False" GridLinesVisibility="None" BorderBrush="DarkGray" IsReadOnly="True" RowHeaderWidth="0">
                 <DataGrid.Background>
                     <SolidColorBrush Color="#FFF0F0F0" Opacity="0"/>
                 </DataGrid.Background>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="机器编号" Binding="{Binding MachineNo}" Width="100" ></DataGridTextColumn>
-                    <DataGridTextColumn Header="报警信息" Binding="{Binding AlarmMessages}" Width="600" ></DataGridTextColumn>
-                    <DataGridTextColumn Header="报警时间" Binding="{Binding TimeStamp,StringFormat='{}{0:yyyy-MM-dd HH:mm:ss}'}" Width="200"></DataGridTextColumn>
+                    <DataGridTextColumn Header="机器编号" Binding="{Binding Path=MachineNo}" Width="100" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="报警信息" Binding="{Binding Path=AlarmMessages}" Width="600" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="报警时间" Binding="{Binding Path=TimeStamp,StringFormat='{}{0:yyyy-MM-dd HH:mm:ss}'}" Width="200"></DataGridTextColumn>
                 </DataGrid.Columns>
                 <DataGrid.ColumnHeaderStyle>
                     <Style TargetType="{x:Type DataGridColumnHeader}">
