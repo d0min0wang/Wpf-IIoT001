@@ -112,7 +112,7 @@ namespace Wpf_IIoT001
                 _handleName = workshop + machineNo + "." + plcNo + ".报警信息." + _description;
                 _alarmFlagDict.Add(_handleName, index * 10000 + (int)x.GetValue(null));
                 //初始化报警信息List
-                GlobalVars.AlarmMessage alarmMessage = new GlobalVars.AlarmMessage();
+                AlarmMessage alarmMessage = new AlarmMessage();
                 alarmMessage.MachineNo = workshop + machineNo;
                 alarmMessage.Index = index * 10000 + (int)x.GetValue(null);
                 alarmMessage.AlarmMessages = _description;
@@ -141,7 +141,7 @@ namespace Wpf_IIoT001
                 _handleName = workshop + machineNo + "." + plcNo + ".报警信息." + _description;
                 _alarmFlagDict.Add(_handleName, index * 10000 + (int)x.GetValue(null));
                 //初始化报警信息List
-                GlobalVars.AlarmMessage alarmMessage = new GlobalVars.AlarmMessage();
+                AlarmMessage alarmMessage = new AlarmMessage();
                 alarmMessage.MachineNo = workshop + machineNo;
                 alarmMessage.Index = index * 10000 + (int)x.GetValue(null);
                 alarmMessage.AlarmMessages = _description;

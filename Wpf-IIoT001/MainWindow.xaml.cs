@@ -356,20 +356,18 @@ namespace Wpf_IIoT001
         /// </summary>
         private void UpdateAlarmList()
         {
-            ObservableCollection<GlobalVars.AlarmMessage> alarmMessagesDS = new ObservableCollection<GlobalVars.AlarmMessage>(GlobalVars.alarmMessages);
-            //alarmMessagesDS.Clear();
-            //List<GlobalVars.AlarmMessage> alarmMessagesDS = new List<GlobalVars.AlarmMessage>();
+            GlobalVars.alarmMessages.Sort((a, b) => b.TimeStamp.CompareTo(a.TimeStamp));
             foreach (var item in GlobalVars.alarmMessages)
             {
                 if (item.AlarmFlag)
                 {
                     //GlobalVars.AlarmMessage alarmMessage = new GlobalVars.AlarmMessage();
-                    alarmMessagesDS.Add(item);
+                    GlobalVars.AlarmMessagesDS.Add(item);
                 }
             }
             //alarmMessagesDS.Sort((a, b) => b.TimeStamp.CompareTo(a.TimeStamp));
             //alarmMessagesDS.ForEach(x=>)
-            GlobalVars.alarmsMessagesList.AlarmMessagesDS = alarmMessagesDS;
+            //GlobalVars.alarmsMessagesList.AlarmMessagesDS = alarmMessagesDS;
         }
 
         /// <summary>

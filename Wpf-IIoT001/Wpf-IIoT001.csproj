@@ -80,7 +80,7 @@
     </Compile>
     <Compile Include="Model\AlarmInfo.cs" />
     <Compile Include="Model\AlarmItems.cs" />
-    <Compile Include="ViewModel\AlarmsMessagesList.cs" />
+    <Compile Include="ViewModel\AlramMessage.cs" />
     <Compile Include="ViewModel\BannerMessages.cs" />
     <Compile Include="Model\machineItems.cs" />
     <Compile Include="Model\OPCCore\OPCChangeModel.cs" />
