@@ -103,7 +103,6 @@ namespace Wpf_IIoT001
                 if (array.Length > 0)
                 {
                     _description = ((DescriptionAttribute)array[0]).Description;
-                    //Console.WriteLine(description);
                 }
                 else
                 {

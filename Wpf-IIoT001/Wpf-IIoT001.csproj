@@ -92,7 +92,6 @@
     <Compile Include="ViewModel\ColorToBrushConverter.cs" />
     <Compile Include="ViewModel\machineFlag.cs" />
     <Compile Include="Model\GlobalVars.cs" />
-    <Compile Include="ViewModel\SortableBindingList.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

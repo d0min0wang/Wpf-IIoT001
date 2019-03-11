@@ -7,7 +7,6 @@ using System.Threading;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
-using System.Collections.ObjectModel;
 
 namespace Wpf_IIoT001
 {
@@ -25,17 +24,6 @@ namespace Wpf_IIoT001
         public MainWindow()
         {
             InitializeComponent();
-            //dataGridViewAlarmMessage.ItemsSource = GlobalVars.AlarmMessagesDS;
-            //BindingInit();
-            ////var task1 = OpcClientInit();
-            
-            //Stopwatch watch = new Stopwatch();///用于计算时间
-            //watch.Start();
-            ////Parallel.Invoke(
-            ////    () => OpcClientInit());
-            
-            //watch.Stop();
-            //label184.Text = watch.ElapsedMilliseconds.ToString();
         }
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
@@ -46,8 +34,6 @@ namespace Wpf_IIoT001
 
             Stopwatch watch = new Stopwatch();///用于计算时间
             watch.Start();
-            //Parallel.Invoke(
-            //    () => OpcClientInit());
             await OpcClientInit();
             watch.Stop();
             label184.Text = watch.ElapsedMilliseconds.ToString();
@@ -110,13 +96,8 @@ namespace Wpf_IIoT001
             //添加监视点位
             machineItems _machineItems = new machineItems();
             AlarmItems _alarmItems = new AlarmItems();
-            ////await Task.Run(() =>
-            ////{
-            //    foreach (KeyValuePair<string, int> keyValuePair in MachineItems.getMachineFlagDict())
-            //    {
-            //    await Task.Run(() => { opcClient.MonitorOPCItem(keyValuePair.Key, keyValuePair.Value); });
-            //    }
-            ////});
+
+            //用多线程添加监视点
             await Task.Run(() =>
                 Parallel.ForEach(_machineItems.getMachineFlagDict(), keyValuePair=>
                 {
@@ -311,12 +292,7 @@ namespace Wpf_IIoT001
         /// <param name="index"></param>
         private void BannerMessageSet(machineFlag flag,int index)
         {
-            //int _quantityOfMachine = 33;
-            //int[] _executing = new int[_quantityOfMachine];
-            //int[] _executingAndMaking = new int[_quantityOfMachine];
-            //int[] _executingAndStartFurnace = new int[_quantityOfMachine];
-            //int[] _executingAndStopFurnace = new int[_quantityOfMachine];
-            //int[] _alarming = new int[_quantityOfMachine];
+
             //开机数量
             GlobalVars.executing[index] = flag.getMachineStart();
             bannerMessages.Executing =GlobalVars.executing.Sum().ToString();
@@ -379,13 +355,9 @@ namespace Wpf_IIoT001
             {
                 if (item.AlarmFlag)
                 {
-                    //GlobalVars.AlarmMessage alarmMessage = new GlobalVars.AlarmMessage();
                     GlobalVars.AlarmMessagesDS.Add(item);
                 }
             }
-            //alarmMessagesDS.Sort((a, b) => b.TimeStamp.CompareTo(a.TimeStamp));
-            //alarmMessagesDS.ForEach(x=>)
-            //GlobalVars.alarmsMessagesList.AlarmMessagesDS = alarmMessagesDS;
         }
 
         /// <summary>
