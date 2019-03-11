@@ -25,13 +25,30 @@ namespace Wpf_IIoT001
         public MainWindow()
         {
             InitializeComponent();
+            //dataGridViewAlarmMessage.ItemsSource = GlobalVars.AlarmMessagesDS;
+            //BindingInit();
+            ////var task1 = OpcClientInit();
+            
+            //Stopwatch watch = new Stopwatch();///用于计算时间
+            //watch.Start();
+            ////Parallel.Invoke(
+            ////    () => OpcClientInit());
+            
+            //watch.Stop();
+            //label184.Text = watch.ElapsedMilliseconds.ToString();
+        }
+
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
             dataGridViewAlarmMessage.ItemsSource = GlobalVars.AlarmMessagesDS;
             BindingInit();
+            //var task1 = OpcClientInit();
+
             Stopwatch watch = new Stopwatch();///用于计算时间
             watch.Start();
-            Parallel.Invoke(
-                () => OpcClientInit());
-            //await OpcClientInit();
+            //Parallel.Invoke(
+            //    () => OpcClientInit());
+            await OpcClientInit();
             watch.Stop();
             label184.Text = watch.ElapsedMilliseconds.ToString();
         }
@@ -926,5 +943,7 @@ namespace Wpf_IIoT001
             cancelTokenSource.Cancel();
             opcClient.Disconnect();
         }
+
+        
     }
 }

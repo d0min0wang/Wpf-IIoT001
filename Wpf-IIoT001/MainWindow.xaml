@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_IIoT001"
         mc:Ignorable="d"
-        Title="制造大车间" Height="1080" Width="1920" MinWidth="1920" MinHeight="1080" Closing="Window_Closing" Icon="Images/icon.png" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+        Title="制造大车间" Height="1080" Width="1920" MinWidth="1920" MinHeight="1080" Closing="Window_Closing" Icon="Images/icon.png" WindowStartupLocation="CenterScreen" WindowState="Maximized" Loaded="Window_Loaded">
     <Window.Resources>
         <local:ColorToBrushConverter x:Key="ColorToBrushConverter"></local:ColorToBrushConverter>
     </Window.Resources>
