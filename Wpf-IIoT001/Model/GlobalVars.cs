@@ -57,10 +57,10 @@ namespace Wpf_IIoT001
 
         //建立全局变量保存每个机器的可计算信息
         //int _quantityOfMachine = 33;
-        public static int[] executing = new int[33];
-        public static int[] executingAndMaking = new int[33];
-        public static int[] executingAndStartFurnace = new int[33];
-        public static int[] executingAndStopFurnace = new int[33];
-        public static int[] alarming = new int[33];
+        public static int[] executing = new int[34];
+        public static int[] executingAndMaking = new int[34];
+        public static int[] executingAndStartFurnace = new int[34];
+        public static int[] executingAndStopFurnace = new int[34];
+        public static int[] alarming = new int[34];
     }
 }

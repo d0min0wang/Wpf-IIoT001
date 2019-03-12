@@ -159,105 +159,105 @@ namespace Wpf_IIoT001
                     switch (model.Index / 100)
                     {
                         //第一排
-                        case 0:
+                        case (int)MachineIndex.DF07:
                             MachineFlagSet(GlobalVars.DF07Flag, model, model.Index);
                             break;
-                        case 1:
+                        case (int)MachineIndex.DF06:
                             MachineFlagSet(GlobalVars.DF06Flag, model, model.Index);
                             break;
-                        case 2:
+                        case (int)MachineIndex.SF08:
                             MachineFlagSet(GlobalVars.SF08Flag, model, model.Index);
                             break;
-                        case 3:
+                        case (int)MachineIndex.SF07:
                             MachineFlagSet(GlobalVars.SF07Flag, model, model.Index);
                             break;
-                        case 4:
+                        case (int)MachineIndex.SF06:
                             MachineFlagSet(GlobalVars.SF06Flag, model, model.Index);
                             break;
-                        case 5:
+                        case (int)MachineIndex.SF05:
                             MachineFlagSet(GlobalVars.SF05Flag, model, model.Index);
                             break;
-                        case 6:
+                        case (int)MachineIndex.SF04:
                             MachineFlagSet(GlobalVars.SF04Flag, model, model.Index);
                             break;
-                        case 7:
+                        case (int)MachineIndex.SF03:
                             MachineFlagSet(GlobalVars.SF03Flag, model, model.Index);
                             break;
-                        case 8:
+                        case (int)MachineIndex.SF02:
                             MachineFlagSet(GlobalVars.SF02Flag, model, model.Index);
                             break;
-                        case 9:
+                        case (int)MachineIndex.SF01:
                             MachineFlagSet(GlobalVars.SF01Flag, model, model.Index);
                             break;
-                        case 10:
+                        case (int)MachineIndex.DF05:
                             MachineFlagSet(GlobalVars.DF05Flag, model, model.Index);
                             break;
-                        case 11:
+                        case (int)MachineIndex.DF04:
                             MachineFlagSet(GlobalVars.DF04Flag, model, model.Index);
                             break;
-                        case 12:
+                        case (int)MachineIndex.DF03:
                             MachineFlagSet(GlobalVars.DF03Flag, model, model.Index);
                             break;
-                        case 13:
+                        case (int)MachineIndex.DF02:
                             MachineFlagSet(GlobalVars.DF02Flag, model, model.Index);
                             break;
-                        case 14:
+                        case (int)MachineIndex.DF01:
                             MachineFlagSet(GlobalVars.DF01Flag, model, model.Index);
                             break;
                         //第二排
-                        case 15:
+                        case (int)MachineIndex.DF17:
                             MachineFlagSet(GlobalVars.DF17Flag, model, model.Index);
                             break;
-                        case 16:
+                        case (int)MachineIndex.DF16:
                             MachineFlagSet(GlobalVars.DF16Flag, model, model.Index);
                             break;
-                        case 17:
+                        case (int)MachineIndex.DF15:
                             MachineFlagSet(GlobalVars.DF15Flag, model, model.Index);
                             break;
-                        case 18:
+                        case (int)MachineIndex.SF12:
                             MachineFlagSet(GlobalVars.SF12Flag, model, model.Index);
                             break;
-                        case 19:
+                        case (int)MachineIndex.SF11:
                             MachineFlagSet(GlobalVars.SF11Flag, model, model.Index);
                             break;
-                        case 20:
+                        case (int)MachineIndex.SF10:
                             MachineFlagSet(GlobalVars.SF10Flag, model, model.Index);
                             break;
-                        case 21:
+                        case (int)MachineIndex.SF09:
                             MachineFlagSet(GlobalVars.SF09Flag, model, model.Index);
                             break;
-                        case 22:
+                        case (int)MachineIndex.DF14:
                             MachineFlagSet(GlobalVars.DF14Flag, model, model.Index);
                             break;
-                        case 23:
+                        case (int)MachineIndex.DF13:
                             MachineFlagSet(GlobalVars.DF13Flag, model, model.Index);
                             break;
-                        case 24:
+                        case (int)MachineIndex.DF12:
                             MachineFlagSet(GlobalVars.DF12Flag, model, model.Index);
                             break;
-                        case 25:
+                        case (int)MachineIndex.DF11:
                             MachineFlagSet(GlobalVars.DF11Flag, model, model.Index);
                             break;
-                        case 26:
+                        case (int)MachineIndex.DF10:
                             MachineFlagSet(GlobalVars.DF10Flag, model, model.Index);
                             break;
-                        case 27:
+                        case (int)MachineIndex.DF09:
                             MachineFlagSet(GlobalVars.DF09Flag, model, model.Index);
                             break;
-                        case 28:
+                        case (int)MachineIndex.DF08:
                             MachineFlagSet(GlobalVars.DF08Flag, model, model.Index);
                             break;
                         //第三排
-                        case 29:
+                        case (int)MachineIndex.SF13:
                             MachineFlagSet(GlobalVars.SF13Flag, model, model.Index);
                             break;
-                        case 30:
+                        case (int)MachineIndex.SF14:
                             MachineFlagSet(GlobalVars.SF14Flag, model, model.Index);
                             break;
-                        case 31:
+                        case (int)MachineIndex.DF19:
                             MachineFlagSet(GlobalVars.DF19Flag, model, model.Index);
                             break;
-                        case 32:
+                        case (int)MachineIndex.SE13:
                             MachineFlagSet(GlobalVars.SE13Flag, model, model.Index);
                             break;
                     }
@@ -418,7 +418,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF01Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(15);
+                str += GetAlarmMessages((int)MachineIndex.DF01);
 
             }
             GlobalVars.DF01Flag.Toolstip = str;
@@ -435,7 +435,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF02Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(14);
+                str += GetAlarmMessages((int)MachineIndex.DF02);
             }
             GlobalVars.DF02Flag.Toolstip = str;
         }
@@ -451,7 +451,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF03Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(13);
+                str += GetAlarmMessages((int)MachineIndex.DF03);
             }
             GlobalVars.DF03Flag.Toolstip = str;
         }
@@ -467,7 +467,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF04Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(12);
+                str += GetAlarmMessages((int)MachineIndex.DF04);
             }
             GlobalVars.DF04Flag.Toolstip = str;
         }
@@ -483,7 +483,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF05Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(11);
+                str += GetAlarmMessages((int)MachineIndex.DF05);
             }
             GlobalVars.DF05Flag.Toolstip = str;
         }
@@ -499,7 +499,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF06Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(2);
+                str += GetAlarmMessages((int)MachineIndex.DF06);
             }
             GlobalVars.DF06Flag.Toolstip = str;
         }
@@ -515,7 +515,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF07Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(1);
+                str += GetAlarmMessages((int)MachineIndex.DF07);
             }
             GlobalVars.DF07Flag.Toolstip = str;
         }
@@ -531,7 +531,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF08Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(29);
+                str += GetAlarmMessages((int)MachineIndex.DF08);
             }
             GlobalVars.DF08Flag.Toolstip = str;
         }
@@ -547,7 +547,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF09Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(28);
+                str += GetAlarmMessages((int)MachineIndex.DF09);
             }
             GlobalVars.DF09Flag.Toolstip = str;
         }
@@ -563,7 +563,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF10Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(27);
+                str += GetAlarmMessages((int)MachineIndex.DF10);
             }
             GlobalVars.DF10Flag.Toolstip = str;
         }
@@ -579,7 +579,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF11Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(26);
+                str += GetAlarmMessages((int)MachineIndex.DF11);
             }
             GlobalVars.DF11Flag.Toolstip = str;
         }
@@ -595,7 +595,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF12Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(25);
+                str += GetAlarmMessages((int)MachineIndex.DF12);
             }
             GlobalVars.DF12Flag.Toolstip = str;
         }
@@ -611,7 +611,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF13Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(24);
+                str += GetAlarmMessages((int)MachineIndex.DF13);
             }
             GlobalVars.DF13Flag.Toolstip = str;
         }
@@ -627,7 +627,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF14Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(23);
+                str += GetAlarmMessages((int)MachineIndex.DF14);
             }
             GlobalVars.DF14Flag.Toolstip = str;
         }
@@ -643,7 +643,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF15Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(18);
+                str += GetAlarmMessages((int)MachineIndex.DF15);
             }
             GlobalVars.DF15Flag.Toolstip = str;
         }
@@ -659,7 +659,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF16Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(17);
+                str += GetAlarmMessages((int)MachineIndex.DF16);
             }
             GlobalVars.DF16Flag.Toolstip = str;
         }
@@ -675,7 +675,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF17Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(16);
+                str += GetAlarmMessages((int)MachineIndex.DF17);
             }
             GlobalVars.DF17Flag.Toolstip = str;
         }
@@ -691,7 +691,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.DF19Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(32);
+                str += GetAlarmMessages((int)MachineIndex.DF19);
             }
             GlobalVars.DF19Flag.Toolstip = str;
         }
@@ -710,7 +710,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF01Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(10);
+                str += GetAlarmMessages((int)MachineIndex.SF01);
             }
             GlobalVars.SF01Flag.Toolstip = str;
         }
@@ -726,7 +726,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF02Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(9);
+                str += GetAlarmMessages((int)MachineIndex.SF02);
             }
             GlobalVars.SF02Flag.Toolstip = str;
         }
@@ -742,7 +742,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF03Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(8);
+                str += GetAlarmMessages((int)MachineIndex.SF03);
             }
             GlobalVars.SF03Flag.Toolstip = str;
         }
@@ -758,7 +758,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF04Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(7);
+                str += GetAlarmMessages((int)MachineIndex.SF04);
             }
             GlobalVars.SF04Flag.Toolstip = str;
         }
@@ -774,7 +774,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF05Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(6);
+                str += GetAlarmMessages((int)MachineIndex.SF05);
             }
             GlobalVars.SF05Flag.Toolstip = str;
         }
@@ -790,7 +790,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF06Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(5);
+                str += GetAlarmMessages((int)MachineIndex.SF06);
             }
             GlobalVars.SF06Flag.Toolstip = str;
         }
@@ -806,7 +806,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF07Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(4);
+                str += GetAlarmMessages((int)MachineIndex.SF07);
             }
             GlobalVars.SF07Flag.Toolstip = str;
         }
@@ -822,7 +822,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF08Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(3);
+                str += GetAlarmMessages((int)MachineIndex.SF08);
             }
             GlobalVars.SF08Flag.Toolstip = str;
         }
@@ -838,7 +838,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF09Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(22);
+                str += GetAlarmMessages((int)MachineIndex.SF09);
             }
             GlobalVars.SF09Flag.Toolstip = str;
         }
@@ -854,7 +854,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF10Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(21);
+                str += GetAlarmMessages((int)MachineIndex.SF10);
             }
             GlobalVars.SF10Flag.Toolstip = str;
         }
@@ -870,7 +870,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF11Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(20);
+                str += GetAlarmMessages((int)MachineIndex.SF11);
             }
             GlobalVars.SF11Flag.Toolstip = str;
         }
@@ -886,7 +886,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF12Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(19);
+                str += GetAlarmMessages((int)MachineIndex.SF12);
             }
             GlobalVars.SF12Flag.Toolstip = str;
         }
@@ -902,7 +902,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF13Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(30);
+                str += GetAlarmMessages((int)MachineIndex.SF13);
             }
             GlobalVars.SF13Flag.Toolstip = str;
         }
@@ -918,7 +918,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SF14Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(31);
+                str += GetAlarmMessages((int)MachineIndex.SF14);
             }
             GlobalVars.SF14Flag.Toolstip = str;
         }
@@ -934,7 +934,7 @@ namespace Wpf_IIoT001
             if (GlobalVars.SE13Flag.getAlarm() == 1)
             {
                 str += "报警信息：" + "\n";
-                str += GetAlarmMessages(33);
+                str += GetAlarmMessages((int)MachineIndex.SE13);
             }
             GlobalVars.SE13Flag.Toolstip = str;
         }
