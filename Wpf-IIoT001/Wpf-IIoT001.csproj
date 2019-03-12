@@ -90,6 +90,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Model\MachineIndex.cs" />
+    <Compile Include="Model\StatusInfo.cs" />
     <Compile Include="ViewModel\StatusMessages.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
