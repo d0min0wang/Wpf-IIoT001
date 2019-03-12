@@ -89,7 +89,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModel\MachineIndex.cs" />
+    <Compile Include="Model\MachineIndex.cs" />
     <Compile Include="ViewModel\StatusMessages.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
